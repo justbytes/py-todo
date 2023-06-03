@@ -2,5 +2,9 @@
     "prettier.enableDebugLogs": true,
     "prettier.withNodeModules": false,
     "prettier.bracketSameLine": true,
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
 }
