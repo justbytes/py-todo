@@ -37,13 +37,11 @@ function Items({
       <span
         className={`todo-title mr-2 ${viewCompleted ? 'completed-todo' : ''}`}
         title={item.description}>
-        {item.title}
+        <h4>{item.title}</h4>
+        <p>{item.description}</p>
       </span>
       <span>
-        <Button
-          variant="secondary"
-          className="mr-2"
-          onClick={() => editItem(item)}>
+        <Button variant="info" className="mr-2" onClick={() => editItem(item)}>
           Edit
         </Button>
         <Button variant="danger" onClick={(e) => handleDelete(item.id)}>

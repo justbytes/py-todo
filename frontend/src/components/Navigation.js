@@ -3,6 +3,7 @@ import React from 'react';
 // Import react-bootstrap
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function Navigation() {
   return (

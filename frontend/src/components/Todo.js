@@ -11,7 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 
 // Import components
 import Items from './Items';
-import Modal from './Modal';
+import CustomModal from './Modal';
 
 function Todo() {
   // Initialize state variables
@@ -48,6 +48,15 @@ function Todo() {
         .then((res) => refreshList());
       return;
     }
+    if ((item.description === '') | (item.title === '')) {
+      alert('Please add a title and description!');
+      return;
+    }
+    if (item.description > 120) {
+      alert('Description field has a maximum of 120 characters!');
+      return;
+    }
+
     axios.post(`/api/todos/`, { ...item }).then((res) => refreshList());
   };
 
@@ -81,10 +90,10 @@ function Todo() {
       </Nav>
       <Container>
         <Row>
-          <Col md={6} sm={10} className="mx-auto p-0">
+          <Col>
             <Card className="p-3">
               <div className="mb-4">
-                <Button variant="primary" onClick={createItem}>
+                <Button className="add-btn" size="lg" onClick={createItem}>
                   Add Todo
                 </Button>
               </div>
@@ -103,9 +112,9 @@ function Todo() {
           </Col>
         </Row>
         {modal && (
-          <Modal
+          <CustomModal
             show={modal}
-            onHide={toggle}
+            toggle={toggle}
             activeItem={activeItem}
             onSave={handleSubmit}
           />

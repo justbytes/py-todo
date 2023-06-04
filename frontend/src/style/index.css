@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Noto+Sans+KR&display=swap');
+
+body {
+  background-color: rgba(190, 204, 203, 0.398);
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.navbar-brand {
+  font-size: 38px;
+  font-weight: bolder;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.nav-tabs {
+  margin-top: 5px;
+  border-bottom: solid 1px grey;
+}
+
+.nav-item {
+  width: 50%;
+  text-align: center;
+  
+}
+
+.nav-link {
+  background-color: #23a84284 !important;
+  border-bottom: solid grey 1px;
+  color: black;
+  font-size: 24px;
+  margin: 1px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: #23a842da !important;
+  color: white;
+}
+
+.add-btn {
+  width: 100%;
+  background-color: #23a84284;
+  border: grey 1px solid;
+  color: black;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background-color: #23a84284 !important;
+  border: grey 1px solid !important;
+}
+
+.card {
+  margin-top: 10%;
+  background-color: #c4c4c24f;
+  width: 100%;
+}
+
+.btn {
+  margin: 1px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h4 {
+  border-bottom: solid 1px black;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.list-group-item {
+  margin: 3px;
+  border-radius: 3px;
+}
+
