@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://python-todo.herokuapp.com/",
+    "python-todo.herokuapp.com",
     "http://127.0.0.1:8000",
     "127.0.0.1",
     "localhost",
