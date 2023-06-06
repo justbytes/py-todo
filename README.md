@@ -25,5 +25,34 @@ Try it out for yourself!
 
 https://python-todo.herokuapp.com/
 
+### Or run locally 
+
+If the link is not working its becausing I'm not paying for the dyno :(
+
+Start by cloning the repo!
+
+Install nesseary dependencies by running: 
+
+```
+npm install
+```
+```
+pip install pipenv
+pipenv shell
+pipenv install 
+```
+
+Then in one terminal run: 
+```
+npm start
+```
+
+And in another terminal run:
+```
+python manage.py runserver
+```
+
+It should now be running locally. 
+
 
 ![display](images/todoScreenshot.png)
